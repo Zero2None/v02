@@ -5,7 +5,7 @@
 using namespace vsite::oop::v2;
 
 int main()
-{    
+{
     color c1;
     double crvena, zelena, plava;
 
