@@ -22,7 +22,9 @@ int main()
     c1.set_blue(plava);
 
     uint32_t color_ref = c1.get_color_ref();
-    std::cout << c1.to_hex(color_ref);
+
+    
+    std::cout << to_hex(color_ref);
 
     return 0;
 

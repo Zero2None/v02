@@ -9,6 +9,11 @@ namespace vsite::oop::v2
 /*
 * class member function implementations
 */
+    std::string to_hex(int a) {
+
+        return std::format("{:X}", a);
+    };
+
     color::color() : red(0.0), green(0.0), blue(0.0) {}
     
     void color::set_red(double val)
@@ -59,9 +64,5 @@ namespace vsite::oop::v2
     }
 
     
-    std::string color::to_hex(int a) {
-
-        return std::format("{:X}", a);
-    };
-
+    
 } // namespace

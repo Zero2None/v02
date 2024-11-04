@@ -9,6 +9,8 @@ namespace vsite::oop::v2
 /*
 * class declaration
 */
+    std::string to_hex(int value);
+
     class color
     {
     public:
@@ -24,8 +26,7 @@ namespace vsite::oop::v2
         unsigned get_color_ref() const;
         double get_luminance() const;
 
-        std::string to_hex(int a);
-
+        
     private:
         double red;
         double green;
