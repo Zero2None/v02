@@ -1,5 +1,7 @@
 #include "app.h"
 #include <algorithm>
+#include <string>
+#include <format>
 
 
 namespace vsite::oop::v2
@@ -56,5 +58,10 @@ namespace vsite::oop::v2
         return 0.2126 * red + 0.7152 * green + 0.0722 * blue;
     }
 
+    
+    std::string color::to_hex(int a) {
+
+        return std::format("{:X}", a);
+    };
 
 } // namespace
